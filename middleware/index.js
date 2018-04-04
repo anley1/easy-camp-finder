@@ -42,7 +42,7 @@ module.exports = {
     if(req.user.isAdmin) {
       next();
     } else {
-      req.flash('error', 'This site is now read only thanks to spam and trolls.');
+      req.flash('error', 'This site is now read only due to potential spamming.');
       res.redirect('back');
     }
   },
